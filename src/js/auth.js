@@ -71,3 +71,26 @@ function mostrarInformacionEnPantalla(rol, datos) {
 
     content.innerHTML = html;
 }
+document.addEventListener('DOMContentLoaded', () => {
+    const loginForm = document.getElementById('login-form');
+
+    if (loginForm) {
+        loginForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const role = document.getElementById('role').value;
+            const email = document.getElementById('email').value;
+
+            const sessionData = {
+                userEmail: email,
+                userRole: role,
+                loginTime: new Date().toISOString()
+            };
+
+            localStorage.setItem('intranet_session', JSON.stringify(sessionData));
+
+            // REDIRECCIÓN A LA SEGUNDA PÁGINA:
+            window.location.href = 'dashboard.html';
+        });
+    }
+});

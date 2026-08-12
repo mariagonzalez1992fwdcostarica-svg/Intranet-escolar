@@ -1,11 +1,17 @@
 /* Variables para colores de alto contraste (Cumple RNF-01 de Accesibilidad) */
 :root {
-    --primary-color: #4B5320; /* Verde militar */
-    --background-color: #FFFACD; /* Amarillo claro */
-    --text-color: #FFFFFF; /* Letras blancas */
-    --card-bg: #4B5320; /* Verde militar para tarjetas */
-    --border-color: #2F3514; /* Verde oscuro */
-    --focus-ring: #8A9A5B; /* Verde claro */
+    --primary-color: #4B5320;
+    /* Verde militar */
+    --background-color: #FFFACD;
+    /* Amarillo claro */
+    --text-color: #FFFFFF;
+    /* Letras blancas */
+    --card-bg: #4B5320;
+    /* Verde militar para tarjetas */
+    --border-color: #2F3514;
+    /* Verde oscuro */
+    --focus-ring: #8A9A5B;
+    /* Verde claro */
 }
 
 body {
@@ -93,4 +99,46 @@ footer {
     background-color: var(--primary-color);
     color: var(--text-color);
     font-size: 0.9rem;
+}
+
+/* Estilos para el botón de regresar */
+.btn-secondary {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 0.75rem;
+    background-color: #6c757d;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    box-sizing: border-box;
+    margin-top: 1rem;
+    transition: background-color 0.2s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+/* Estilos para el botón de regresar */
+.btn-secondary {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 0.75rem;
+    background-color: #6c757d;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    box-sizing: border-box;
+    margin-top: 1rem;
+    transition: background-color 0.2s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
 }
