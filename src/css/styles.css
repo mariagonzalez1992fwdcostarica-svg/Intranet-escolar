@@ -1,11 +1,11 @@
 /* Variables para colores de alto contraste (Cumple RNF-01 de Accesibilidad) */
 :root {
-    --primary-color: #004085;
-    --background-color: #f8f9fa;
-    --text-color: #212529;
-    --card-bg: #ffffff;
-    --border-color: #ced4da;
-    --focus-ring: #80bdff;
+    --primary-color: #4B5320; /* Verde militar */
+    --background-color: #FFFACD; /* Amarillo claro */
+    --text-color: #FFFFFF; /* Letras blancas */
+    --card-bg: #4B5320; /* Verde militar para tarjetas */
+    --border-color: #2F3514; /* Verde oscuro */
+    --focus-ring: #8A9A5B; /* Verde claro */
 }
 
 body {
@@ -62,6 +62,8 @@ select {
     border-radius: 4px;
     box-sizing: border-box;
     font-size: 1rem;
+    color: #000000;
+    background-color: var(--background-color);
 }
 
 input:focus,
@@ -82,12 +84,13 @@ select:focus {
 }
 
 .btn-primary:hover {
-    background-color: #002752;
+    background-color: #3A4018;
 }
 
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: #e9ecef;
+    background-color: var(--primary-color);
+    color: var(--text-color);
     font-size: 0.9rem;
 }
