@@ -15,6 +15,11 @@
 
     <main class="login-container">
         <section class="login-card">
+            <!-- Contenedor dinámico para mostrar la información académica -->
+            <section id="dashboard" class="login-card" style="display: none; margin-top: 20px;">
+                <h2 id="dashboard-title">Panel Académico</h2>
+                <div id="academic-data"></div>
+            </section>
             <h2>Acceso al Sistema</h2>
             <form id="login-form">
                 <div class="form-group">
@@ -45,8 +50,9 @@
     <footer>
         <p>&copy; 2026 Intranet Escolar. Sistema de gestión pública protegida.</p>
     </footer>
+    <script src="js/grades.js"></script>
     <script src="js/auth.js"></script>
-    
+
 </body>
 
 </html>
